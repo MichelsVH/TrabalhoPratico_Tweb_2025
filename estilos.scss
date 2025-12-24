@@ -17,6 +17,14 @@ h1{
     unicode-bidi: isolate;
 }
 
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
 .icon{
             margin-right: 0.25rem;
             width: 1rem;
@@ -581,4 +589,32 @@ header{
     max-width: calc(var(--grid-col-span) / var(--grid-columns) * 100%);
     padding-left: calc(var(--grid-gutter) / 2);
     padding-right: calc(var(--grid-gutter) / 2);
+}
+
+#card_bottom_structure_1_img{
+    height: 0px;
+    overflow: hidden;
+    border-radius: var(--border-radius-l, 0);
+    position: relative;
+    padding-top: 133.33%;
+}
+
+@media (min-width: 650px) {
+    #card_bottom_structure_1_img{
+        padding-top: 56.25%;
+    }
+}
+@media (min-width: 900px) {
+    #card_bottom_structure_1_img{
+        padding-top: 42.86%;
+    }
+}
+
+#img_carro1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
