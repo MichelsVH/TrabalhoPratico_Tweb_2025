@@ -14,7 +14,7 @@
     
     
         <div id="div_fundo">
-            <img id="img_fundo" alt="Aluguer mundial de viaturas premium ao melhor preço." sizes="100vw" src="imagens/background_img.jpg">
+            <img id="img_fundo" alt="Aluguer mundial de viaturas premium ao melhor preço." sizes="100%" src="imagens/background_img.jpg">
             <div id="gradient_overlay">
                 <header>
                     <div id="header_grid">
@@ -45,29 +45,71 @@
                     </div>
         
                 </header>
-                <div id="form-container">
-                    <div id="form-structure">
-                        <div id="seletor-veiculo">
-                            <div id="carros">
-                                <span class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"></path></svg>
-                                </span>
-                                <span id="carros_text">Carros</span>
-                            </div>
-                            <div id="carrinhas">
-                                <span class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M1 16V7a2 2 0 012-2h11.86a4 4 0 013.328 1.781L21 11a2 2 0 012 2v3h-2a3 3 0 11-6 0H8a3 3 0 11-6 0H1zm7-9h5v4H8V7zM6 7H3v4h3V7zm9 4V7.005a2 2 0 011.523.886L18.596 11H15zM4 16a1 1 0 102 0 1 1 0 00-2 0zm13 0a1 1 0 102 0 1 1 0 00-2 0z" clip-rule="evenodd"></path></svg>                                </span>
-                                <span id="carrinhas_text">Carrinhas</span>
-                            </div>
-                        </div>
-                        <div id="form-content-structure">
-                            <div id="form-content">
-                                
-                            </div>
-                        </div>
-
+            </div>
+        </div>
+        
+        <div id="form-container">
+            <div id="form-structure">
+                <div id="seletor-veiculo">
+                    <div id="carros">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"></path></svg>
+                        </span>
+                        <span id="carros_text">Carros</span>
+                    </div>
+                    <div id="carrinhas">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M1 16V7a2 2 0 012-2h11.86a4 4 0 013.328 1.781L21 11a2 2 0 012 2v3h-2a3 3 0 11-6 0H8a3 3 0 11-6 0H1zm7-9h5v4H8V7zM6 7H3v4h3V7zm9 4V7.005a2 2 0 011.523.886L18.596 11H15zM4 16a1 1 0 102 0 1 1 0 00-2 0zm13 0a1 1 0 102 0 1 1 0 00-2 0z" clip-rule="evenodd"></path></svg>                                </span>
+                        <span id="carrinhas_text">Carrinhas</span>
                     </div>
                 </div>
+                <div id="form-content-structure">
+                    <div id="form-content">
+                        <form id="search-form">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="pickup-location">Local de Levantamento</label>
+                                    <div class="input-group">
+                                        <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                                        <input type="text" id="pickup-location" placeholder="Porto Aeroporto" value="Porto Aeroporto">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <label for="pickup-date">Data de Levantamento</label>
+                                    <input type="date" id="pickup-date">
+                                </div>
+                                
+                                <div class="form-field">
+                                    <label for="pickup-time">Hora</label>
+                                    <input type="time" id="pickup-time" value="10:00">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row" id="return-section">
+                                <div class="form-field">
+                                    <label>
+                                        <input type="checkbox" id="different-location">
+                                        Devolução em Local Diferente
+                                    </label>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <label for="return-date">Data de Devolução</label>
+                                    <input type="date" id="return-date">
+                                </div>
+                                
+                                <div class="form-field">
+                                    <label for="return-time">Hora</label>
+                                    <input type="time" id="return-time" value="10:00">
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit">Mostrar veículos</button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div id="structure_below_fundo">
@@ -130,23 +172,297 @@
                 </div>
             </div>
         </section>
-        <div id="cards_bottom">
-            <div id="cards_bottom_structure">
-                <div id="cards_bottom_structure_1">
-                    <div id="card_bottom_structure_1_img">
-                        <img id="img_carro1" alt="MERRY SYXTMAS" importance="low" loading="lazy" src="imagens/carro1.png">
-                        <a id="card_bottom_structure_1_abs">
-                            
-                        </a>
-                    </div>
+        <div id="promo-section">
+            <div id="promo-list">
 
+                <div class="promo-card">
+                    <img class="promo-card-image" src="imagens/carro1.png" alt="MERRY SIXTMAS">
+                    <a href="#" class="promo-card-link">
+                        <div class="promo-card-badge">
+                            <div class="badge-content">
+                                <div class="badge-label">Até</div>
+                                <div class="badge-value">24%</div>
+                                <div class="badge-text">de Desconto</div>
+                            </div>
+                        </div>
+                        <div class="promo-card-overlay">
+                            <h3>MERRY SIXTMAS</h3>
+                            <p>24% de desconto em todos os alugueres</p>
+                            <button class="btn-secondary">Reserve Já</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="promo-card">
+                    <img class="promo-card-image" src="imagens/carro2.png" alt="Conduzir em Lisboa">
+                    <a href="#" class="promo-card-link">
+                        <div class="promo-card-overlay">
+                            <h3>CONDUZIR EM LISBOA É FÁCIL. MUITO FÁCIL.</h3>
+                            <p>Descobre os elétricos XEV da SIXT</p>
+                            <button class="btn-secondary">Reserve Já</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="promo-card">
+                    <img class="promo-card-image" src="imagens/carro3.png" alt="Gama Porsche">
+                    <a href="#" class="promo-card-link">
+                        <div class="promo-card-overlay">
+                            <h3>DESCUBRA A NOSSA GAMA PORSCHE</h3>
+                            <p>Com a SIXT, ao volante de um sonho.</p>
+                            <button class="btn-secondary">Reserve Já</button>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
+        <section id="fleet-container">
+            <div id="fleet-slider">
+                <div id="fleet-text-container">
+                    <h2>O automóvel perfeito para a sua próxima viagem a partir de Açores Ponta Delgada Aeroporto</h2>
+                </div>
+                <div id="fleet-structure-container">
+                    <div id="fleet-carousel-container">
+                        <div id="fleet-carousel-cards-container">
+                            <div id="fleet-carousel-cards-structure">
+                                <div class="fleet-card-structure" id="fleet-card-1">
+                                    <div class="fleet-card-base">
+                                        <div class="fleet-card-fundo">
+                                            <img class="fleet-card-image" src="imagens/renault-clio-5d-schwarz-2020.png" alt="Carro 1">
+                                        </div>
+                                        <a class="fleet-card-content" href="#">
+                                            <div class="fleet-card-content-top">
+                                                <div class="fleet-card-content-top-text-container">
+                                                    <div>
+                                                        <h3 class="fleet-card-content-top-title">Renault Clio</h3>
+                                                        <span class="fleet-card-content-top-subtitle">ou semelhante</span>
+                                                        <p class="fleet-card-content-top-description">Economy Sedan Manual</p>
+                                                    </div>
+                                                </div>
+                                                    
+                                            </div>   
+                                            <div class="fleet-card-content-bottom">
+                                                <div class="fleet-card-content-bottom-text">
+                                                    <span class="fleet-card-content-bottom-text-structure">
+                                                        <span class="fleet-card-content-bottom-span1">de</span>
+                                                        <span class="fleet-card-content-bottom-span2">
+                                                            <span class="fleet-card-content-bottom-span2-1">55</span>
+                                                            <span>,</span>
+                                                            <span class="fleet-card-content-bottom-span2-2">40</span>
+                                                            <span class="fleet-card-content-bottom-span2-3">€</span>
+                                                            <span class="fleet-card-content-bottom-span2-3">/ dia</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <button class="fleet-card-content-bottom-button">
+                                                    <span class="fleet-card-content-bottom-button-span">
+                                                        <span class="fleet-card-content-bottom-button-text">
+                                                            Reserve Já
+                                                        </span>
+                                                    </span>
+                                                </button>
+                                                    
+                                            </div>   
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="fleet-card-structure" id="fleet-card-2">
+                                    <div class="fleet-card-base">
+                                        <div class="fleet-card-fundo">
+                                            <img class="fleet-card-image" src="imagens/renault-captur-5d-blau-2020.png" alt="Carro 1">
+                                        </div>
+                                        <a class="fleet-card-content" href="#">
+                                            <div class="fleet-card-content-top">
+                                                <div class="fleet-card-content-top-text-container">
+                                                    <div>
+                                                        <h3 class="fleet-card-content-top-title">Renault Captur</h3>
+                                                        <span class="fleet-card-content-top-subtitle">ou semelhante</span>
+                                                        <p class="fleet-card-content-top-description">Compact SUV Manual</p>
+                                                    </div>
+                                                </div>
+                                                    
+                                            </div>   
+                                            <div class="fleet-card-content-bottom">
+                                                <div class="fleet-card-content-bottom-text">
+                                                    <span class="fleet-card-content-bottom-text-structure">
+                                                        <span class="fleet-card-content-bottom-span1">de</span>
+                                                        <span class="fleet-card-content-bottom-span2">
+                                                            <span class="fleet-card-content-bottom-span2-1">60</span>
+                                                            <span>,</span>
+                                                            <span class="fleet-card-content-bottom-span2-2">85</span>
+                                                            <span class="fleet-card-content-bottom-span2-3">€</span>
+                                                            <span class="fleet-card-content-bottom-span2-3">/ dia</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <button class="fleet-card-content-bottom-button">
+                                                    <span class="fleet-card-content-bottom-button-span">
+                                                        <span class="fleet-card-content-bottom-button-text">
+                                                            Reserve Já
+                                                        </span>
+                                                    </span>
+                                                </button>
+                                                    
+                                            </div>   
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="fleet-card-structure" id="fleet-card-3">
+                                    <div class="fleet-card-base">
+                                        <div class="fleet-card-fundo">
+                                            <img class="fleet-card-image" src="imagens/renault-megane-kombi-blau-2018.png" alt="Carro 1">
+                                        </div>
+                                        <a class="fleet-card-content" href="#">
+                                            <div class="fleet-card-content-top">
+                                                <div class="fleet-card-content-top-text-container">
+                                                    <div>
+                                                        <h3 class="fleet-card-content-top-title">Renault Megane Sports Tourer</h3>
+                                                        <span class="fleet-card-content-top-subtitle">ou semelhante</span>
+                                                        <p class="fleet-card-content-top-description">Compact Station wagon Manual</p>
+                                                    </div>
+                                                </div>
+                                                    
+                                            </div>   
+                                            <div class="fleet-card-content-bottom">
+                                                <div class="fleet-card-content-bottom-text">
+                                                    <span class="fleet-card-content-bottom-text-structure">
+                                                        <span class="fleet-card-content-bottom-span1">de</span>
+                                                        <span class="fleet-card-content-bottom-span2">
+                                                            <span class="fleet-card-content-bottom-span2-1">63</span>
+                                                            <span>,</span>
+                                                            <span class="fleet-card-content-bottom-span2-2">90</span>
+                                                            <span class="fleet-card-content-bottom-span2-3">€</span>
+                                                            <span class="fleet-card-content-bottom-span2-3">/ dia</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <button class="fleet-card-content-bottom-button">
+                                                    <span class="fleet-card-content-bottom-button-span">
+                                                        <span class="fleet-card-content-bottom-button-text">
+                                                            Reserve Já
+                                                        </span>
+                                                    </span>
+                                                </button>
+                                                    
+                                            </div>   
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="fleet-card-structure" id="fleet-card-4">
+                                    <div class="fleet-card-base">
+                                        <div class="fleet-card-fundo">
+                                            <img class="fleet-card-image" src="imagens/renault-trafic-van-brown-2015.png" alt="Carro 1">
+                                        </div>
+                                        <a class="fleet-card-content" href="#">
+                                            <div class="fleet-card-content-top">
+                                                <div class="fleet-card-content-top-text-container">
+                                                    <div>
+                                                        <h3 class="fleet-card-content-top-title">Renault Trafic</h3>
+                                                        <span class="fleet-card-content-top-subtitle">ou semelhante</span>
+                                                        <p class="fleet-card-content-top-description">Full-size Minivan Manual</p>
+                                                    </div>
+                                                </div>
+                                                    
+                                            </div>   
+                                            <div class="fleet-card-content-bottom">
+                                                <div class="fleet-card-content-bottom-text">
+                                                    <span class="fleet-card-content-bottom-text-structure">
+                                                        <span class="fleet-card-content-bottom-span1">de</span>
+                                                        <span class="fleet-card-content-bottom-span2">
+                                                            <span class="fleet-card-content-bottom-span2-1">91</span>
+                                                            <span>,</span>
+                                                            <span class="fleet-card-content-bottom-span2-2">73</span>
+                                                            <span class="fleet-card-content-bottom-span2-3">€</span>
+                                                            <span class="fleet-card-content-bottom-span2-3">/ dia</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <button class="fleet-card-content-bottom-button">
+                                                    <span class="fleet-card-content-bottom-button-span">
+                                                        <span class="fleet-card-content-bottom-button-text">
+                                                            Reserve Já
+                                                        </span>
+                                                    </span>
+                                                </button>
+                                                    
+                                            </div>   
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="fleet-carousel-controls">
+                            <button id="fleet-prev" class="fleet-control-btn fleet-control-btn-prev" aria-label="Anterior">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+                                </svg>
+                            </button>
+                            <button id="fleet-next" class="fleet-control-btn fleet-control-btn-next" aria-label="Próximo">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                                </svg>
+                            </button>
+                        </div>  
+                    </div>
+                </div>
+                <p id="fleet-disclaimer">
+                    *Os preços foram calculados para um aluguel pré-pago em Açores Ponta Delgada Aeroporto com base nos parâmetros de pesquisa fornecidos. Nossos preços são dinâmicos, flutuam diariamente e esta oferta não é garantida.
+                </p>
+            </div>
+        </section>
+
+        <section id="moresixt-section">
+            <div id="moresixt-container">
+                <div id="moresixt-header">
+                    <h2>Mais SIXT</h2>
+                </div>
+                <div id="moresixt-grid">
+                    <div class="moresixt-card">
+                        <img src="imagens/sixt-empresas.png" alt="SIXT Empresas">
+                        <a href="#" class="moresixt-card-link">
+                            <h3>SIXT Empresas</h3>
+                            <p>Verifique os benefícios para clientes corporativos.</p>
+                            <button type="button" class="moresixt-card-btn">
+                                <span>Saber mais</span>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="moresixt-card">
+                        <img src="imagens/sixt-subscricao.png" alt="Subscrição Automóvel SIXT+">
+                        <a href="#" class="moresixt-card-link">
+                            <h3>Subscrição Automóvel SIXT+</h3>
+                            <p>A forma mais flexível de ter um carro, sem comprar ou fazer um leasing.</p>
+                            <button type="button" class="moresixt-card-btn">
+                                <span>Saber mais</span>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="moresixt-card">
+                        <img src="imagens/sixt-ride.png" alt="SIXT Ride">
+                        <a href="#" class="moresixt-card-link">
+                            <h3>SIXT Ride</h3>
+                            <p>Descubra o serviço de boleia ideal para a sua viagem.</p>
+                            <button type="button" class="moresixt-card-btn">
+                                <span>Saber mais</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials-section">
+            <img id="testimonials-bg-image" src="imagens/depoimentos.png" alt="Testemunhos de Clientes">
+            <div id="testimonials-container">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">Excelente atendimento, recomendo vivamente das melhores experiências que já tive no que toca a alugueres de automóveis.</p>
+                    <p class="testimonial-author">— Yasmin, Porto</p>
+                </div>
+            </div>
+        </section>
         
     </div>
     
-    
-    
+    <script src="logica.js"></script>
 </body>
 </html>
